@@ -14,5 +14,7 @@ namespace OOAD_tutorijal_FINAL.Models
         public Student Student { get; set; }
         public Predmet Predmet { get; set; }
 
+        public UpisNaPredmet() { }
+
     }
 }

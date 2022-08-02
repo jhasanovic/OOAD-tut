@@ -9,5 +9,7 @@ namespace OOAD_tutorijal_FINAL.Models
         public string Naziv { get; set; }
         public double ECTS { get; set; }
 
+        public Predmet() { }
+
     }
 }
