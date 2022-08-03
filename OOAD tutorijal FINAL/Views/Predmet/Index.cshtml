@@ -1,10 +1,10 @@
 ﻿@model IEnumerable<OOAD_tutorijal_FINAL.Models.Predmet>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Predmeti";
 }
 
-<h1>Index</h1>
+<h1>Predmeti</h1>
 
 <p>
     <a asp-action="Create">Create New</a>
@@ -18,7 +18,9 @@
             <th>
                 @Html.DisplayNameFor(model => model.ECTS)
             </th>
-            <th></th>
+            <th>
+                Actions
+            </th>
         </tr>
     </thead>
     <tbody>

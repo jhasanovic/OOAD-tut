@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
 
 namespace OOAD_tutorijal_FINAL.Models
 {
@@ -6,6 +7,7 @@ namespace OOAD_tutorijal_FINAL.Models
     {
         [Key]
         public int ID { get; set; }
+        [DisplayName("Naziv predmeta")]
         public string Naziv { get; set; }
         public double ECTS { get; set; }
 
