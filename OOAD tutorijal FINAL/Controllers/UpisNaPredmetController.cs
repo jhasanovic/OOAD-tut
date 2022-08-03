@@ -49,7 +49,7 @@ namespace OOAD_tutorijal_FINAL.Controllers
         // GET: UpisNaPredmet/Create
         public IActionResult Create()
         {
-            ViewData["PredmetId"] = new SelectList(_context.Predmet, "ID", "ID");
+            ViewData["PredmetId"] = new SelectList(_context.Predmet, "ID", "Naziv");
             ViewData["StudentId"] = new SelectList(_context.Student, "BrojIndeksa", "BrojIndeksa");
             return View();
         }
@@ -59,7 +59,7 @@ namespace OOAD_tutorijal_FINAL.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("ID,StudentId,PredmetId")] UpisNaPredmet upisNaPredmet)
+        public async Task<IActionResult> Create([Bind("ID,StudentId,PredmetId,DatumUpisa")] UpisNaPredmet upisNaPredmet)
         {
             if (ModelState.IsValid)
             {
@@ -67,7 +67,7 @@ namespace OOAD_tutorijal_FINAL.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["PredmetId"] = new SelectList(_context.Predmet, "ID", "ID", upisNaPredmet.PredmetId);
+            ViewData["PredmetId"] = new SelectList(_context.Predmet, "ID", "Naziv", upisNaPredmet.PredmetId);
             ViewData["StudentId"] = new SelectList(_context.Student, "BrojIndeksa", "BrojIndeksa", upisNaPredmet.StudentId);
             return View(upisNaPredmet);
         }
@@ -85,7 +85,7 @@ namespace OOAD_tutorijal_FINAL.Controllers
             {
                 return NotFound();
             }
-            ViewData["PredmetId"] = new SelectList(_context.Predmet, "ID", "ID", upisNaPredmet.PredmetId);
+            ViewData["PredmetId"] = new SelectList(_context.Predmet, "ID", "Naziv", upisNaPredmet.PredmetId);
             ViewData["StudentId"] = new SelectList(_context.Student, "BrojIndeksa", "BrojIndeksa", upisNaPredmet.StudentId);
             return View(upisNaPredmet);
         }
@@ -95,7 +95,7 @@ namespace OOAD_tutorijal_FINAL.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("ID,StudentId,PredmetId")] UpisNaPredmet upisNaPredmet)
+        public async Task<IActionResult> Edit(int id, [Bind("ID,StudentId,PredmetId,DatumUpisa")] UpisNaPredmet upisNaPredmet)
         {
             if (id != upisNaPredmet.ID)
             {
@@ -122,7 +122,7 @@ namespace OOAD_tutorijal_FINAL.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["PredmetId"] = new SelectList(_context.Predmet, "ID", "ID", upisNaPredmet.PredmetId);
+            ViewData["PredmetId"] = new SelectList(_context.Predmet, "ID", "Naziv", upisNaPredmet.PredmetId);
             ViewData["StudentId"] = new SelectList(_context.Student, "BrojIndeksa", "BrojIndeksa", upisNaPredmet.StudentId);
             return View(upisNaPredmet);
         }
