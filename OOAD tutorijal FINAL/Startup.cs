@@ -28,12 +28,16 @@ namespace OOAD_tutorijal_FINAL
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<ApplicationDbContext>(options =>
-                options.UseSqlServer(
-                    Configuration.GetConnectionString("DefaultConnection")));
+           options.UseSqlServer(
+           Configuration.GetConnectionString("DefaultConnection")));
+
             services.AddDatabaseDeveloperPageExceptionFilter();
 
-            services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
-                .AddEntityFrameworkStores<ApplicationDbContext>();
+            services.AddDefaultIdentity<IdentityUser>(options =>
+           options.SignIn.RequireConfirmedAccount = true)
+            .AddRoles<IdentityRole>()
+            .AddEntityFrameworkStores<ApplicationDbContext>();
+
             services.AddControllersWithViews();
         }
 
@@ -67,5 +71,6 @@ namespace OOAD_tutorijal_FINAL
                 endpoints.MapRazorPages();
             });
         }
+
     }
 }

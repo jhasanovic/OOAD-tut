@@ -68,6 +68,7 @@ namespace OOAD_tutorijal_FINAL.Controllers
         }
 
         // GET: Predmet/Edit/5
+        [Authorize(Roles ="Administrator")]
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -86,6 +87,7 @@ namespace OOAD_tutorijal_FINAL.Controllers
         // POST: Predmet/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+        [Authorize(Roles = "Administrator")]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, [Bind("ID,Naziv,ECTS")] Predmet predmet)
@@ -119,6 +121,7 @@ namespace OOAD_tutorijal_FINAL.Controllers
         }
 
         // GET: Predmet/Delete/5
+        [Authorize(Roles = "Administrator")]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -137,6 +140,7 @@ namespace OOAD_tutorijal_FINAL.Controllers
         }
 
         // POST: Predmet/Delete/5
+        [Authorize(Roles = "Administrator")]
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
