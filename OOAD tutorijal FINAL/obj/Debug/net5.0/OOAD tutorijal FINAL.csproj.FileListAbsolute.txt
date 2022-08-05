@@ -173,3 +173,10 @@ C:\Users\jasmi\source\repos\OOAD tutorijal FINAL\OOAD tutorijal FINAL\obj\Debug\
 C:\Users\jasmi\source\repos\OOAD tutorijal FINAL\OOAD tutorijal FINAL\obj\Debug\net5.0\Razor\Views\UpisNaPredmet\Details.cshtml.g.cs
 C:\Users\jasmi\source\repos\OOAD tutorijal FINAL\OOAD tutorijal FINAL\obj\Debug\net5.0\Razor\Views\UpisNaPredmet\Edit.cshtml.g.cs
 C:\Users\jasmi\source\repos\OOAD tutorijal FINAL\OOAD tutorijal FINAL\obj\Debug\net5.0\Razor\Views\UpisNaPredmet\Index.cshtml.g.cs
+C:\Users\jasmi\source\repos\OOAD tutorijal FINAL\OOAD tutorijal FINAL\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\AccessDenied.cshtml.g.cs
+C:\Users\jasmi\source\repos\OOAD tutorijal FINAL\OOAD tutorijal FINAL\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\ConfirmEmail.cshtml.g.cs
+C:\Users\jasmi\source\repos\OOAD tutorijal FINAL\OOAD tutorijal FINAL\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Login.cshtml.g.cs
+C:\Users\jasmi\source\repos\OOAD tutorijal FINAL\OOAD tutorijal FINAL\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Register.cshtml.g.cs
+C:\Users\jasmi\source\repos\OOAD tutorijal FINAL\OOAD tutorijal FINAL\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\_ViewImports.cshtml.g.cs
+C:\Users\jasmi\source\repos\OOAD tutorijal FINAL\OOAD tutorijal FINAL\obj\Debug\net5.0\Razor\Areas\Identity\Pages\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\jasmi\source\repos\OOAD tutorijal FINAL\OOAD tutorijal FINAL\obj\Debug\net5.0\Razor\Areas\Identity\Pages\_ViewImports.cshtml.g.cs
