@@ -10,7 +10,7 @@ namespace OOAD_tutorijal_FINAL.Models
         [EnumDataType(typeof(VrstaStudenta))]
         public VrstaStudenta Vrsta { get; set; }
         public int GodinaStudija { get; set; }
-
+        public string Slika { get; set; }
         public Student() { }
     }
 }

@@ -21,6 +21,9 @@
             <th>
                 @Html.DisplayNameFor(model => model.GodinaStudija)
             </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Slika)
+            </th>
             <th>Actions</th>
         </tr>
     </thead>
@@ -35,6 +38,9 @@
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.GodinaStudija)
+            </td>
+            <td>
+                <img src=@item.Slika>
             </td>
             <td>
                     @if (User.IsInRole("Administrator")) {

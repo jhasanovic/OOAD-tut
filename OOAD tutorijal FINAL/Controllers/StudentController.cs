@@ -56,7 +56,7 @@ namespace OOAD_tutorijal_FINAL.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("BrojIndeksa,Vrsta,GodinaStudija")] Student student)
+        public async Task<IActionResult> Create([Bind("BrojIndeksa,Vrsta,GodinaStudija,Slika")] Student student)
         {
             if (ModelState.IsValid)
             {
@@ -90,7 +90,7 @@ namespace OOAD_tutorijal_FINAL.Controllers
         [Authorize(Roles = "Administrator")]
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("BrojIndeksa,Vrsta,GodinaStudija")] Student student)
+        public async Task<IActionResult> Edit(int id, [Bind("BrojIndeksa,Vrsta,GodinaStudija,Slika")] Student student)
         {
             if (id != student.BrojIndeksa)
             {
